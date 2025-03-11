@@ -1,18 +1,43 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { GeistProvider, CssBaseline } from "@geist-ui/react";
+import localFont from "next/font/local";
 import "./globals.css";
 import ClientWrapper from "@/components/ClientWrapper";
 import Header from "@/components/Header";
 import { Toaster } from "@/components/ui/sonner";
 
-const geistSans = Geist({
+// Load Geist Sans font locally
+const geistSans = localFont({
+  src: [
+    {
+      path: "../public/fonts/Geist-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Geist-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-geist-sans",
-  subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
+// Load Geist Mono font locally
+const geistMono = localFont({
+  src: [
+    {
+      path: "../public/fonts/GeistMono-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/GeistMono-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
   variable: "--font-geist-mono",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -26,18 +51,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ClientWrapper>
-          <Header />
-
-          <main>{children}</main>
-
-          <Toaster position="bottom-center" />
-        </ClientWrapper>
-      </body>
-    </html>
+    <GeistProvider>
+      <CssBaseline />
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          <ClientWrapper>
+            <Header />
+            <main>{children}</main>
+            <Toaster position="bottom-center" />
+          </ClientWrapper>
+        </body>
+      </html>
+    </GeistProvider>
   );
 }

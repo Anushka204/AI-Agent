@@ -14,6 +14,7 @@
     "@ai-sdk/react": "^1.1.21",
     "@anthropic-ai/sdk": "^0.39.0",
     "@clerk/nextjs": "^6.12.1",
+    "@geist-ui/react": "^2.2.5",
     "@google/generative-ai": "^0.24.0",
     "@radix-ui/react-progress": "^1.1.2",
     "@radix-ui/react-slot": "^1.1.2",
