@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { GeistProvider, CssBaseline } from '@geist-ui/react';
 import "./globals.css";
 import ClientWrapper from "@/components/ClientWrapper";
 import Header from "@/components/Header";

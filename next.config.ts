@@ -18,6 +18,16 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /@schematichq\/schematic-components/,
+      parser: {
+        commonjs: false,
+      },
+    });
+    return config;
+  },
 };
 
 export default nextConfig;
