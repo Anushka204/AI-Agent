@@ -3,8 +3,7 @@ import { createAnthropic } from "@ai-sdk/anthropic";
 import { streamText, tool } from "ai";
 import { currentUser } from "@clerk/nextjs/server";
 import { getVideoDetails } from "@/actions/getVideoDetails";
-import fetchTranscript from "@/tools/fetchTranscript";
-import { generateImage } from "@/tools/generateImage";
+
 import { z } from "zod";
 
 import { titleGeneration } from "@/actions/titleGeneration"; // ✅ Fixed import
