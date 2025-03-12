@@ -1,6 +1,7 @@
-import withTM from 'next-transpile-modules';
+import type { NextConfig } from "next";
 
-const nextConfig = withTM(['@schematichq/schematic-components'])({
+const nextConfig: NextConfig = {
+  /* config options here */
   images: {
     remotePatterns: [
       {
@@ -17,6 +18,6 @@ const nextConfig = withTM(['@schematichq/schematic-components'])({
       },
     ],
   },
-});
+};
 
 export default nextConfig;
