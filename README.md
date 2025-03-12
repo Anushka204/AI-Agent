@@ -1,39 +1,35 @@
+AI Content Analysis Platform is an AI-powered tool designed to help content creators maximize the potential of their YouTube videos by providing deep insights, automated content generation, and strategic recommendations. Built using Next.js 15, React 19, and AI SDK, the platform streamlines content creation and optimization for increased engagement and visibility.
 
-AI Content Agent
+Key Features:
+🎯 AI Video Analysis – Extracts deep insights from video content using advanced AI models.
+📝 Smart Transcription – Provides accurate video transcriptions with timestamps for subtitles and content repurposing.
+🖼️ Thumbnail Generation – Generates engaging and click-worthy thumbnails using AI.
+🪶 Title Generation – Suggests SEO-optimized titles to increase visibility and audience reach.
+📹 Shot Script – Creates detailed shooting and editing guides for recreating successful video styles.
+🤖 AI Agent Conversations – Offers AI-driven content strategy suggestions through interactive conversations.
 
-This is an AI-powered content analysis platform that helps content creators get insights from their YouTube videos. The platform uses advanced AI to analyze video content, generate transcriptions, create thumbnails, and provide content recommendations.
-
-Repository: https://github.com/sonnysangha/5-day-challenge-ai-agent-saas-challenge-nextjs-15-schematic-clerk.git
-
-Features
-AI Video Analysis - Deep insights into your video content with advanced AI analysis
-Smart Transcription - Accurate transcriptions of your videos for subtitles or repurposing content
-Thumbnail Generation - AI-generated eye-catching thumbnails to boost click-through rates
-Title Generation - SEO-optimized title suggestions that resonate with your audience
-Shot Script - Detailed instructions to recreate viral videos with shooting techniques and editing tips
-AI Agent Conversations - Engage in discussions about content strategy with your AI agent companion
-Tech Stack
-Frontend: Next.js 15, React 19, TailwindCSS
+Tech Stack:
+Frontend: Next.js 15, React 19, Tailwind CSS
+Backend: Node.js
 AI Integration: AI SDK, Anthropic, OpenAI
 Authentication: Clerk
 Database: Convex
-Styling: Tailwind CSS, Radix UI components
-YouTube Integration: youtubei.js for video data extraction
-Project Structure
-/app - Next.js app directory with pages and layouts
-/components - Reusable UI components
-/convex - Database models and schema
-/actions - Server actions for form handling and business logic
-/lib - Utility functions and helper methods
-/features - Feature flag configurations
-/public - Static assets
-Data Model
-The application stores:
+Styling: Tailwind CSS, Radix UI
+YouTube Integration: youtubei.js for fetching video data
+Project Structure:
+📂 /app – Next.js app directory with routing and layouts
+📂 /components – Reusable UI components (buttons, forms, etc.)
+📂 /convex – Convex models and schema definitions
+📂 /actions – Server actions for form handling and business logic
+📂 /lib – Utility functions and helper methods
+📂 /features – Feature flag configurations
+📂 /public – Static assets (images, fonts)
 
-YouTube video IDs linked to users
-Video transcripts with timestamps
-Generated images/thumbnails
-Custom generated titles
+Data Model:
+YouTube video IDs linked to user accounts
+Video transcripts with timestamps for easy reference
+Generated thumbnails stored with metadata
+Custom titles optimized for SEO and engagement
 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
