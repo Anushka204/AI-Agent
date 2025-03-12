@@ -1,3 +1,41 @@
+
+AI Content Agent
+
+This is an AI-powered content analysis platform that helps content creators get insights from their YouTube videos. The platform uses advanced AI to analyze video content, generate transcriptions, create thumbnails, and provide content recommendations.
+
+Repository: https://github.com/sonnysangha/5-day-challenge-ai-agent-saas-challenge-nextjs-15-schematic-clerk.git
+
+Features
+AI Video Analysis - Deep insights into your video content with advanced AI analysis
+Smart Transcription - Accurate transcriptions of your videos for subtitles or repurposing content
+Thumbnail Generation - AI-generated eye-catching thumbnails to boost click-through rates
+Title Generation - SEO-optimized title suggestions that resonate with your audience
+Shot Script - Detailed instructions to recreate viral videos with shooting techniques and editing tips
+AI Agent Conversations - Engage in discussions about content strategy with your AI agent companion
+Tech Stack
+Frontend: Next.js 15, React 19, TailwindCSS
+AI Integration: AI SDK, Anthropic, OpenAI
+Authentication: Clerk
+Database: Convex
+Styling: Tailwind CSS, Radix UI components
+YouTube Integration: youtubei.js for video data extraction
+Project Structure
+/app - Next.js app directory with pages and layouts
+/components - Reusable UI components
+/convex - Database models and schema
+/actions - Server actions for form handling and business logic
+/lib - Utility functions and helper methods
+/features - Feature flag configurations
+/public - Static assets
+Data Model
+The application stores:
+
+YouTube video IDs linked to users
+Video transcripts with timestamps
+Generated images/thumbnails
+Custom generated titles
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
